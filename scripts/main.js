@@ -1,5 +1,5 @@
 document.querySelector('h1').onclick = function() {
-    alert('Ouch! Stop poking me!');
+    alert('Wrong spot to click.');
 }
 
 
@@ -7,10 +7,10 @@ var myImage = document.querySelector('img');
 
 myImage.onclick = function() {
     var  mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/hp_image.jpg') {
-        myImage.setAttribute ('src', 'images/hp_image2.jpg');
+    if(mySrc === 'images/4.jpg') {
+        myImage.setAttribute ('src', 'images/4s.jpg');
     } else {
-        myImage.setAttribute ('src', 'images/hp_image.jpg');
+        myImage.setAttribute ('src', 'images/4.jpg');
     }
 }
 
@@ -19,7 +19,7 @@ var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
 function setUserName() {
-  var myName = prompt('Please enter your name.');
+  var myName = prompt('What is your name？');
   localStorage.setItem('Patrick', myName);
   myHeading.textContent = 'Happy birthday, ' + myName;
 }
